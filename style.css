@@ -1,0 +1,383 @@
+
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fcf6fa;
+    color: #596273;
+}
+
+
+/* ===== NAVIGATION BAR ===== */
+header {
+    width: 100%;
+    background: #ffffff;
+    padding: 22px 6.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #e91e63, #a020b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #596273;
+    font-size: 19px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e91e63;
+}
+
+
+/* ===== HOME SECTION ===== */
+.home {
+    min-height: 90vh;
+    padding: 70px 6.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    background:
+        radial-gradient(
+            circle at 18% 20%,
+            #fcecf3 0,
+            transparent 17%
+        ),
+        linear-gradient(120deg, #fcf7f9, #faf2fc);
+}
+
+.profile-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+.profile-content h1 {
+    font-family: Georgia, serif;
+    font-size: 82px;
+    line-height: 1.2;
+    margin: 30px 0 20px;
+}
+
+.profile-content h1 span {
+    font-family: Georgia, serif;
+    background: linear-gradient(90deg, #e91e63, #a020b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.profile-content h3 {
+    color: #e91e63;
+    font-size: 29px;
+    margin-bottom: 30px;
+}
+
+.profile-content p {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+
+/* ===== BUTTONS ===== */
+.btn {
+    display: inline-block;
+    padding: 18px 28px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #e91e63, #a020b0);
+    border: 2px solid #e91e63;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px #e91e6330;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #e91e63;
+    border-color: #f08ab1;
+}
+
+.btn-outline:hover {
+    background: #e91e63;
+    color: white;
+}
+
+
+/* ===== PROFILE CARD ===== */
+.profile-image {
+    flex: 1;
+    max-width: 690px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:  50px;
+    background: white;
+    border-radius: 100px;
+    padding: 35px;
+    box-shadow: 0 20px 45px #e91e6312;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 7px solid #f08ab1;
+    outline: 2px solid #f4c0d4;
+    outline-offset: 9px;
+}
+
+
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background: linear-gradient(135deg, #e91e63, #a020b0);
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+
+/* ===== GENERAL SECTIONS ===== */
+section:not(.home) {
+    padding: 80px 6.5%;
+    text-align: center;
+}
+
+section:not(.home) h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #bd238e;
+    margin-bottom: 25px;
+}
+
+
+/* ===== ABOUT ME SECTION ===== */
+.about {
+    padding: 100px 8% !important;
+    background: #ffffff;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: 45px;
+    margin-bottom: 30px;
+
+    background: linear-gradient(90deg, #e91e63, #a020b0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent !important;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto !important;
+    padding: 35px;
+    background: #fcf4f9;
+    border-left: 5px solid #e91e63;
+    border-radius: 15px;
+
+    font-size: 19px;
+    line-height: 1.9;
+    text-align: left;
+    color: #596273;
+
+    box-shadow: 0 10px 30px #a020b010;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+.contact p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+
+/* ===== SKILLS AND PROJECTS ===== */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #e91e6310;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #e91e6320;
+}
+
+.skill-card h3 {
+    color: #e91e63;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    line-height: 1.7;
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: white;
+    color: #596273;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 900px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 50px 5%;
+        text-align: center;
+    }
+
+    .profile-content h1 {
+        font-size: 55px;
+    }
+
+    .profile-content h3 {
+        font-size: 24px;
+    }
+
+    .profile-content p {
+        font-size: 18px;
+    }
+
+    .profile-image {
+        width: 100%;
+        min-height: 350px;
+    }
+
+    .about {
+        padding: 70px 5% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    nav ul {
+        gap: 14px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .profile-content h1 {
+        font-size: 42px;
+    }
+
+    .profile-image {
+        padding: 25px 15px;
+    }
+
+    .profile-image img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .btn {
+        margin: 8px 4px;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 35px;
+    }
+
+    .about p {
+        padding: 22px;
+        font-size: 17px;
+        line-height: 1.8;
+    }
+}
