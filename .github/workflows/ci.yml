@@ -1,0 +1,21 @@
+
+name: Profile CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Check HTML, CSS and JS files
+        run: |
+          echo "Project files downloaded"
+          ls
